@@ -35,15 +35,20 @@ body {
 /* --------fonts-------- */
 body,
 p {
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 8px;
   color: var(--primary-light);
 }
 h2 {
   font-size: 10em;
 }
 h3 {
-  font-size: 3em;
+  font-size: 3.5em;
+}
+h4 {
+  font-size: 2.5em;
+}
+h5 {
+  font-size: 2em;
 }
 .section {
   height: 100vh;
@@ -55,12 +60,24 @@ h3 {
 }
 @media (max-width: 1200px) {
   h3 {
+    font-size: 2.5em;
+  }
+  h4 {
     font-size: 2em;
+  }
+  h5 {
+    font-size: 1.5em;
   }
 }
 @media (max-width: 992px) {
   h3 {
+    font-size: 2.5em;
+  }
+  h4 {
     font-size: 2em;
+  }
+  h5 {
+    font-size: 1.5em;
   }
 }
 @media (max-width: 768px) {
@@ -68,7 +85,13 @@ h3 {
     font-size: 4em;
   }
   h3 {
-    font-size: 1.2em;
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1em;
   }
 }
 @media (max-width: 576px) {
