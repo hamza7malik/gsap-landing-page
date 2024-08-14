@@ -2,6 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Adobe Arabic';
+  src: url('/fonts/AdobeArabic-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('/fonts/HelveticaNeueLTStd-Bd.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +24,9 @@ html {
   --color-primary: #181818;
   --color-secondary: #ffffff;
 }
+
 body {
+  font-family: 'Helvetica Neue LT Std', serif;
   background-color: var(--color-secondary);
   line-height: normal;
   scroll-snap-type: y mandatory;
@@ -18,7 +35,7 @@ body {
 /* --------fonts-------- */
 body,
 p {
-  font-family: 'Genos', sans-serif;
+  font-family: 'Helvetica Neue LT Std', serif;
   font-weight: 400;
   font-size: 18px;
   color: var(--primary-light);
