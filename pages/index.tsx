@@ -59,16 +59,16 @@ const index = () => {
             <h3 className='text-black'>Launch thinking</h3>
           </div>
         </div>
-        <div className='w-10 h-[50%] bg-black absolute bottom-0 left-1/2 transform -translate-x-1/2'></div>
+        <div className='w-10 md:w-16 h-[50%] bg-black absolute bottom-0 left-1/2 transform -translate-x-1/2'></div>
       </div>
 
       <div className=' h-[100vh] bg-white w-full relative'>
-        <div className='w-10 h-full bg-black absolute top-0 left-1/2 transform -translate-x-1/2'></div>
+        <div className='w-10 md:w-16 h-full bg-black absolute top-0 left-1/2 transform -translate-x-1/2'></div>
         <div className='h-full text-center flex items-center  justify-center'>
           <div className='text-center bg-white z-10'>
-            <h3 className='text-black mb-20'>does not equal</h3>
+            <h3 className='text-black mb-8 md:mb-20'>does not equal</h3>
 
-            <div className='inline-block rotate-90 bg-white origin-center ml-5 p-6'>
+            <div className='inline-block rotate-90 bg-white origin-center ml-2 md:ml-5 p-2 md:p-6'>
               <h2 className='text-black'>growth</h2>
               <h2 className='text-black'>thinking</h2>
             </div>
@@ -77,7 +77,7 @@ const index = () => {
       </div>
 
       <div className='section-snap  h-[100vh] bg-white w-full relative'>
-        <div className='w-10 h-[50%] bg-black absolute top-0 left-1/2 transform -translate-x-1/2'></div>
+        <div className='w-10 md:w-16 h-[50%] bg-black absolute top-0 left-1/2 transform -translate-x-1/2'></div>
         <div className='h-full text-center flex items-center  justify-center'>
           <div className='bg-white p-6 z-10'>
             <h3 className='text-black'>Growth requires rethinking</h3>
