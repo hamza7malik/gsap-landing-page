@@ -8,7 +8,7 @@ import AnimatedLogo from '../components/AnimatedLogo/AnimatedLogo';
 import Footer from '../components/Footer/Footer';
 import Image from 'next/image';
 
-const index = () => {
+const Home = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     snapSectionContent('.section-content-snap');
@@ -96,4 +96,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;
