@@ -1,0 +1,42 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-primary: #181818;
+  --color-secondary: #ffffff;
+}
+body {
+  background-color: var(--color-secondary);
+  line-height: normal;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+/* --------fonts-------- */
+body,
+p {
+  font-family: 'Genos', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--primary-light);
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* ----------responsiveness---------- */
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
