@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect } from 'react';
 
 import gsap from 'gsap';
@@ -32,9 +33,17 @@ const Home = () => {
     };
   }, []);
 
+  // locootive import
+  useEffect(() => {
+    (async () => {
+      //@ts-ignore
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   return (
     <div>
-      {/* section-1 */}
       <div className='section-content-snap h-[100vh] bg-white w-full'>
         <div className='px-20 my-auto flex items-center justify-center h-full text-center'>
           <AnimatedLogo />
