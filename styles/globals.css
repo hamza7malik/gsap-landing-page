@@ -42,7 +42,7 @@ h2 {
   font-size: 10em;
 }
 h3 {
-  font-size: 3.5em;
+  font-size: 5.87em;
 }
 h4 {
   font-size: 2.5em;
@@ -54,14 +54,23 @@ h5 {
   height: 100vh;
   scroll-snap-align: start;
 }
+.re {
+  opacity: 0;
+  position: relative;
+}
 
+.think {
+  position: relative;
+  display: inline-block;
+  left: -2.5rem; /* Adjust this to match the amount you move it in GSAP */
+}
 /* ----------responsiveness---------- */
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
-  h3 {
+  /* h3 {
     font-size: 2.5em;
-  }
+  } */
   h4 {
     font-size: 2em;
   }
@@ -70,9 +79,9 @@ h5 {
   }
 }
 @media (max-width: 992px) {
-  h3 {
+  /* h3 {
     font-size: 2.5em;
-  }
+  } */
   h4 {
     font-size: 2em;
   }
@@ -82,11 +91,11 @@ h5 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 4em;
+    font-size: 7em;
   }
-  h3 {
+  /* h3 {
     font-size: 2em;
-  }
+  } */
   h4 {
     font-size: 1.5em;
   }
@@ -95,4 +104,7 @@ h5 {
   }
 }
 @media (max-width: 576px) {
+  h3 {
+    font-size: 3.8em;
+  }
 }
