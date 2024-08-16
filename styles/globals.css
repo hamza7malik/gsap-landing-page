@@ -59,18 +59,19 @@ h5 {
   position: relative;
 }
 
+.section-snap {
+  overflow: hidden;
+}
+
 .think {
   position: relative;
   display: inline-block;
-  left: -2.5rem; /* Adjust this to match the amount you move it in GSAP */
+  left: -2.5rem;
 }
 /* ----------responsiveness---------- */
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
-  /* h3 {
-    font-size: 2.5em;
-  } */
   h4 {
     font-size: 2em;
   }
@@ -79,9 +80,6 @@ h5 {
   }
 }
 @media (max-width: 992px) {
-  /* h3 {
-    font-size: 2.5em;
-  } */
   h4 {
     font-size: 2em;
   }
@@ -93,18 +91,21 @@ h5 {
   h2 {
     font-size: 7em;
   }
-  /* h3 {
-    font-size: 2em;
-  } */
   h4 {
     font-size: 1.5em;
   }
-  h4 {
-    font-size: 1em;
+  .last-section-text {
+    font-size: 3em;
   }
 }
 @media (max-width: 576px) {
   h3 {
     font-size: 3.8em;
+  }
+  .rethink-text {
+    font-size: 5.3em;
+  }
+  .what-is-creo {
+    font-size: 2em;
   }
 }

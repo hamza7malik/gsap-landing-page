@@ -1,12 +1,54 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
-export const rotateElement = () => {
-  gsap.to('.rotate-element', {
-    rotation: 360,
-    duration: 2,
-    repeat: -1,
-    ease: 'linear',
+export const logoAnimation = () => {
+  gsap.fromTo(
+    ['.r-letter', '.e-letter'],
+    { opacity: 0, y: 20 },
+    {
+      opacity: 1,
+      y: 0,
+
+      duration: 3,
+      ease: 'power2.out',
+    }
+  );
+
+  gsap.fromTo(
+    '.letters-wrapper',
+    { scale: 0.9, y: 50 },
+    {
+      scale: 1,
+      y: 0,
+      duration: 4,
+      ease: 'power2.out',
+    }
+  );
+
+  gsap.fromTo(
+    ['.c-letter', '.o-letter'],
+    { y: 0, opacity: 1 },
+    {
+      y: 200,
+      opacity: 0.5,
+      scrollTrigger: {
+        trigger: '.section-logo',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+      ease: 'power2.out',
+    }
+  );
+  gsap.to('.section-logo', {
+    backgroundColor: 'black',
+    scrollTrigger: {
+      trigger: '.section-logo',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true,
+    },
+    ease: 'power2.out',
   });
 };
 
@@ -116,6 +158,128 @@ export const straightLineMidToBottomAnimation = () => {
         end: 'bottom top',
         scrub: true,
       },
+    }
+  );
+};
+
+export const exploreElementAnimation = () => {
+  gsap.fromTo(
+    '.explore-element',
+    { opacity: 0, filter: 'blur(10px)' },
+    {
+      opacity: 1,
+      filter: 'blur(0)',
+      scrollTrigger: {
+        trigger: '.last-section',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+
+      ease: 'power2.in',
+    }
+  );
+};
+
+export const typeWriterAnimation = () => {
+  gsap.to('.typewriter-text', {
+    scrollTrigger: {
+      trigger: '.section-footer',
+      start: 'top bottom',
+      end: 'top bottom',
+      scrub: 2,
+    },
+    text: { value: ' requires CREO' },
+    ease: 'none',
+  });
+};
+
+export const lastSectionStripAnimation = () => {
+  gsap.fromTo(
+    '.last-section-strip',
+    { y: 0 },
+    {
+      y: '-100%',
+
+      // opacity: 0.5,
+      scrollTrigger: {
+        trigger: '.last-section',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+
+      ease: 'power2.out',
+    }
+  );
+};
+
+export const textFloatOutAnimation = () => {
+  gsap.matchMedia().add('(min-width: 768px)', () => {
+    gsap.fromTo(
+      '.float-out-text',
+      { marginLeft: 0 },
+      {
+        marginLeft: '-360px',
+        scrollTrigger: {
+          trigger: '.last-section',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+        },
+        ease: 'power2.out',
+      }
+    );
+  });
+  gsap.matchMedia().add('(max-width: 767px)', () => {
+    gsap.fromTo(
+      '.float-out-text',
+      { marginLeft: 0 },
+      {
+        marginLeft: '-190px',
+        scrollTrigger: {
+          trigger: '.last-section',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+        },
+        ease: 'power2.out',
+      }
+    );
+  });
+};
+
+export const whatIsCreoAnimation = () => {
+  gsap.fromTo(
+    '.what-is-creo',
+    { scale: 3, x: '25%', opacity: 0.5, y: '10%' },
+    {
+      x: '-55%',
+      scale: 3,
+      opacity: 1,
+      y: '-10%',
+      scrollTrigger: {
+        trigger: '.section-what-is-creo',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+      ease: 'power2.out',
+    }
+  );
+  gsap.fromTo(
+    '.creo',
+    { scale: 0.2 },
+    {
+      scale: 1,
+
+      scrollTrigger: {
+        trigger: '.section-what-is-creo',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+      ease: 'power2.out',
     }
   );
 };
