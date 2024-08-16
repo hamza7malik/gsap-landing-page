@@ -9,7 +9,7 @@ export const logoAnimation = () => {
       opacity: 1,
       y: 0,
 
-      duration: 3,
+      duration: 2,
       ease: 'power2.out',
     }
   );
@@ -20,7 +20,7 @@ export const logoAnimation = () => {
     {
       scale: 1,
       y: 0,
-      duration: 4,
+      duration: 3,
       ease: 'power2.out',
     }
   );
